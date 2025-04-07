@@ -2477,49 +2477,86 @@ input, select, textarea {
 
 /* Small */
 
-	@media screen and (max-width: 736px) {
+	@media screen and (max-width: 800px) {
 
-		/* Basic */
+  /* Basic body adjustments */
+  body {
+    padding-top: 44px;
+    font-size: 10pt;
+    line-height: 1.6em;
+  }
 
-			body {
-				padding-top: 44px;
-			}
+  body, input, textarea, select {
+    font-size: 10pt;
+    line-height: 1.6em;
+    letter-spacing: 0;
+  }
 
-			body, input, textarea, select {
-				line-height: 1.75em;
-				font-size: 10pt;
-				letter-spacing: 0;
-			}
+  /* Headings */
+  h1 {
+    font-size: 1.75em;  /* down from 2.25em */
+    line-height: 1.2em;
+    margin: 0 0 0.4em 0;
+  }
 
-			h1, h2, h3, h4, h5, h6 {
-				font-size: 1.25em;
-				margin: 0 0 0.4em 0;
-			}
+  h2, h3, h4, h5, h6 {
+    font-size: 1.15em;
+    margin: 0 0 0.4em 0;
+  }
 
-			h1 {
-				font-size: 2.25em;
-				line-height: 1.25em;
-			}
+  /* Header section (top of hero) */
+  header {
+    margin: 0 0 1.5em 0;
+    text-align: center;
+    padding: 0 1rem;
+  }
 
-			header {
-				margin: 0 0 2em 0;
-			}
+  header > p {
+    font-size: 1em;
+  }
 
-				header > p {
-					font-size: 1.25em;
-				}
+  /* Footer text */
+  footer {
+    margin: 2em 0 0 0;
+    text-align: center;
+  }
 
-			footer {
-				margin: 2.5em 0 0 0;
-			}
+  footer > p {
+    font-size: 1em;
+  }
 
-				footer > p {
-					font-size: 1.25em;
-				}
+  /* Horizontal rule */
+  hr {
+    margin: 1em 0 1.5em 0;
+  }
 
-			hr {
-				margin: 1.5em 0 2em 0;
-			}
+  /* Buttons */
+  a.button,
+  button {
+    font-size: 1em;
+    padding: 0.75em 1.5em;
+    display: inline-block;
+    width: 100%; /* full width on mobile for easier tapping */
+    box-sizing: border-box;
+  }
+
+  /* Images */
+  .image.fit img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Column stacking */
+  .row > .col-4,
+  .row > .col-5-large,
+  .row > .col-8,
+  .row > .col-7-large,
+  .row > .col-12-medium {
+    width: 100% !important;
+    margin-bottom: 1.5rem;
+  }
+
+}
 
 		/* Section/Article */
 
