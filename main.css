@@ -281,6 +281,7 @@ input, select, textarea {
 		-webkit-transition: color .2s ease-in-out;
 		-ms-transition: color .2s ease-in-out;
 		transition: color .2s ease-in-out;
+		color: #C72C41;
 
 	}
 
