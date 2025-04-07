@@ -11,6 +11,34 @@
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+.hero-image {
+  position: relative;
+  background: url('sunset.jpg') no-repeat center center/cover;
+  color: white;
+  padding: 5rem 0;
+}
+
+.hero-image .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* dark overlay */
+  z-index: 1;
+}
+
+.hero-image .content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-image h1,
+.hero-image p,
+.hero-image a {
+  color: #fff;
+}
+
 
 .cv-button {
    
@@ -55,6 +83,7 @@ section, summary, time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 	font-family: 'Poppins', sans-serif;
+	color: black
 }
 
 article, aside, details, figcaption, figure,
@@ -265,7 +294,7 @@ input, select, textarea {
 
 	b, strong {
 		font-weight: 600;
-		color: white;
+		color: black;
 	}
 
 	i, em {
